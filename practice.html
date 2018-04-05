@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 05 - DOM Practice</title>
+    <script src="js/dom-practice.js"></script>
+    <script>
+	
+		function clickedEvnt() {
+			alert('I have been clicked');
+		}
+	</script>
+</head>
+<body>
+    <body onload="loaded()">
+<button onclick="clicked()">Click me</button>
+<button id="myButton">Click me (onclick listener)</button>
+<button id="myButton1">Click me (Event listener calls user defined fn)</button>
+<button id="myButton2">Click me (Event listener invoked callback)</button>
+<button onclick="clickedEvnt()">Click me (callback in head tag)</button>
+<a href="http://www.google.com" id="redirect" onclick="preventRedirect(event)">Visit Google</a>
+<br>
+<input type="text" id="textBox"/> <button id="myButton3">Click me</button>
+<br>
+<button onclick="openNewPage()">Open new page</button>
+</body>
+</html>

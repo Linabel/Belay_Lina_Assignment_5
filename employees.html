@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 05 - Employee Management Application</title>
+    <script src="js/employee-management.js"></script>
+</head>
+<body>
+    <link rel="stylesheet" href="./css/style.css">
+<script src="./js/employee-management.js"></script>
+<body onload="loadData()">
+<h1>Employee Management </h1>
+
+<table>
+<tr>
+<td><h2>Add Employee</h2><td>
+</tr>
+<tr>
+<td>Name: </td>
+<td><input type="text" id="name"></input></td>
+<td style="color:red" id="nameError"></td>
+</tr>
+<tr>
+<td>Title: </td>
+<td><input type="text" id="title"></input></td>
+<td style="color:red" id="titleError"></td>
+</tr>
+<tr>
+<td>Extension: </td>
+<td><input type="text" id="extension"></input></td>
+<td style="color:red" id="extensionError"></td>
+</tr>
+<tr>
+<td></td>
+<td><button onclick="addEmployee()">Add</button></td>
+<tr>
+</table>
+<h2 id="countLabel"></h2>
+<table class="table" >
+<thead>
+<tr>
+    <th>NAME</th>
+    <th>TITLE</th>
+    <th>EXTENSION</th>
+	 <th>DELETE</th>
+  </tr>
+</thead>
+  <tbody id="employeeTable">
+  
+  </tbody>
+  
+</table>
+</body>
+</html>
